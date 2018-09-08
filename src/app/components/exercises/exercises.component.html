@@ -1,0 +1,16 @@
+<div class="component-container">
+  <div class="top-component">
+      <p class="title">This is the exercises list.</p>
+  </div>
+  <div class="exercise" *ngFor="let exercise of exercises">
+    <div class="left-side">
+        <img class="exercise-image" [src]="exercise.imgUrl">
+    </div>
+    <div class="right-side">
+          <p class="exercise-title">{{exercise.name}}</p>
+          <div class="exercise-comment-content">
+            <p class="exercise-comment">{{exercise.comment}}</p>
+          </div>
+    </div>
+  </div>
+</div>

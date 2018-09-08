@@ -1,0 +1,53 @@
+.component-container{
+    width: 90%;
+    margin: auto;
+}
+
+.title{
+    font-size: 3em;
+    padding: 10px 20px;
+}
+
+.exercise{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 45px;
+    display: flex;
+    direction: row;
+    -webkit-box-shadow: 7px 10px 21px -12px rgba(0,0,0,0.66);
+    -moz-box-shadow: 7px 10px 21px -12px rgba(0,0,0,0.66);
+    box-shadow: 7px 10px 21px -12px rgba(0,0,0,0.66);
+}
+
+.left-side, .right-side{
+    width: 100%;
+    background-color: white;
+}
+
+.exercise-image{
+    height: 100%;
+    width: 100%;
+}
+
+.right-side{
+    width: 100%;
+    display: block;
+}
+
+.exercise-title{
+    font-size: 2em;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.exercise-comment-content{
+    height: 50%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+

@@ -1,6 +1,6 @@
 /* General navbar */
 .navbar{
-    height: 10vh;
+    height: 12vh;
     text-align: right;
 }
 ul {
@@ -79,7 +79,7 @@ a {
         padding: 5px;
         margin-left: 10px;
     }
-    .nav-container .current{
+    .nav-container .current-link{
        margin-left: auto;
        margin-right: 10px;
        font-size: 1.5em;
