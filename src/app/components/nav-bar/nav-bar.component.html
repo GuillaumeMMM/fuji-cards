@@ -1,11 +1,17 @@
+<!-- <fa-icon [icon]="faCoffee"></fa-icon> -->
 <nav class="navbar">
     <ul>
-      <div class="nav-items">
-          <a href="#"><li class="current">Home</li></a>
-          <!-- <li><a href="#">Home</a></li> -->
-          <li><a href="#">Cards</a></li>
-          <li><a href="#">Exercises</a></li>
-          <li><a href="#">Learning</a></li>
-      </div>
+        <div class="nav-container">
+            <a href="#">
+                <div class="current-container">
+                    <a href="#" (click)="displayMenu()"><i class="fa fa-3x fa-bars" title="bars"></i></a>
+                    <li class="current">Home</li>
+                </div>
+            </a>
+        <!-- <li><a href="#" class="nav-item">Home</a></li> -->
+        <li class="nav-li-item"><a href="#" class="nav-item">Cards</a></li>
+        <li class="nav-li-item"><a href="#" class="nav-item">Exercises</a></li>
+        <li class="nav-li-item"><a href="#" class="nav-item">Learning</a></li>
+        </div>
     </ul>
 </nav>
