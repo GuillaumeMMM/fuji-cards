@@ -1,0 +1,14 @@
+.instructions-container{
+    width: 90%;
+    margin: auto;
+}
+
+.title{
+    font-size: 3em;
+    padding: 10px 20px;
+}
+
+.subtitle{
+    font-size: 1.5em;
+    padding: 10px 20px;
+}

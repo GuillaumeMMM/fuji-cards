@@ -2,16 +2,17 @@
 <nav class="navbar">
     <ul>
         <div class="nav-container">
-            <a href="#">
+            <a class="header-link">
                 <div class="current-container">
                     <a (click)="displayMenu()"><i class="fa fa-3x fa-bars" title="bars"></i></a>
-                    <a href="/home" class='current-link'><li class="current">Home</li></a>
+                    <a [href]="activeRoute.route" class='current-link' (mouseout)="mouseOutAtive()" (mouseover)="mouseOverAtive()"><li class="current"><span class="current-text">{{activeRoute.name}}</span></li></a>
                 </div>
             </a>
         <!-- <li><a href="#" class="nav-item">Home</a></li> -->
-        <li class="nav-li-item"><a href="#" class="nav-item">Cards</a></li>
-        <li class="nav-li-item"><a href="/exercises" class="nav-item">Exercises</a></li>
-        <li class="nav-li-item"><a href="#" class="nav-item">Learning</a></li>
+        <li *ngIf="activeRoute.name !== 'Home'" class="nav-li-item"><a href="#" class="nav-item">Home</a></li>
+        <li *ngIf="activeRoute.name !== 'Cards'" class="nav-li-item"><a href="#" class="nav-item">Cards</a></li>
+        <li *ngIf="activeRoute.name !== 'Exercises'" class="nav-li-item"><a href="/exercises" class="nav-item">Exercises</a></li>
+        <li *ngIf="activeRoute.name !== 'Learning'" class="nav-li-item"><a href="#" class="nav-item">Learning</a></li>
         </div>
     </ul>
 </nav>

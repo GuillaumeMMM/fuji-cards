@@ -1,0 +1,18 @@
+<div class="instructions-container" *ngIf="!exerciseStarted">
+    <div class="top-component">
+      <p class="title">This is the drawing exercise.</p>
+      <p class="istructions">This exercise is a series of English words. For each element of this list, you will have to draw on the screen the matching Japanese character.</p>
+    </div>
+    <div class="setting-form">
+      <p class="subtitle">Settings</p>
+      <form>
+        This is the form.
+      </form>
+      <button class="start-button" (click)="onStartExercise()">Start</button>
+    </div>
+</div>
+
+<div class="exercise-container" *ngIf="exerciseStarted">
+  <p class="title">Draw the character た</p>
+  <app-drawing-canvas></app-drawing-canvas>
+</div>

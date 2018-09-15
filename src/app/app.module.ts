@@ -10,11 +10,14 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { ExerciseComponent } from './components/exercises/exercise/exercise.component';
 
 import { DataService } from './services/data.service';
+import { ExerciseDrawingComponent } from './components/exercises/exercise-drawing/exercise-drawing.component';
+import { DrawingCanvasComponent } from './components/exercises/exercise-drawing/drawing-canvas/drawing-canvas.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', component: HomeComponent },
   { path: 'exercises', component: ExercisesComponent },
+  { path: 'exercise-drawing', component: ExerciseDrawingComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
@@ -25,7 +28,9 @@ const appRoutes: Routes = [
     ExercisesComponent,
     HomeComponent,
     PageNotFoundComponent,
-    ExerciseComponent
+    ExerciseComponent,
+    ExerciseDrawingComponent,
+    DrawingCanvasComponent
   ],
   imports: [
     BrowserModule,

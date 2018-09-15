@@ -25,10 +25,6 @@ ul {
 .navbar li:not(.current){
     padding: 10px 15px;
 }
-a {
-    text-decoration: none;
-    color: black;
-}
 .navbar li a{
     padding: 1px 0;
 }
@@ -38,6 +34,9 @@ a {
 .nav-container i{
     color: white;
     display: none;
+}
+.header-link{
+    cursor: pointer;
 }
 
 /* Current Item */

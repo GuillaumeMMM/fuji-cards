@@ -9,20 +9,20 @@
 }
 
 .exercise{
-    width: 80%;
+    width: 70%;
     height: 100%;
     margin: auto;
     margin-bottom: 45px;
     display: flex;
     direction: row;
-    -webkit-box-shadow: 7px 10px 21px -12px rgba(0,0,0,0.66);
-    -moz-box-shadow: 7px 10px 21px -12px rgba(0,0,0,0.66);
-    box-shadow: 7px 10px 21px -12px rgba(0,0,0,0.66);
 }
 
 .left-side, .right-side{
     width: 100%;
     background-color: white;
+    -webkit-box-shadow: 0px 3px 22px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 22px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 22px -4px rgba(0,0,0,0.75);
 }
 
 .exercise-image{

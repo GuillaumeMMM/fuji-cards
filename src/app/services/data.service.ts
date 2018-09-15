@@ -6,7 +6,6 @@ export class DataService {
   fakeExercises = [];
 
   constructor() {
-    console.log('service');
 
     this.fakeExercises = [{
       name: 'Drawing',
@@ -42,20 +41,21 @@ export class DataService {
         }
       ],
     },
-    {
-      name: 'Japanese to English',
-      id: '1',
-      comment: 'Try to guess signification of japanese characters in English. Help can be enables in the exercise settings.',
-      imgUrl: 'assets/japanese-to-english.jpg',
-      data: [],
-    },
-    {
-      name: 'English to Japanese',
-      id: '1',
-      comment: 'Try to guess signification of english characters in Japanese. Help can be enables in the exercise settings.',
-      imgUrl: 'assets/classroom.jpg',
-      data: [],
-    }];
+    // {
+    //   name: 'Japanese to English',
+    //   id: '1',
+    //   comment: 'Try to guess signification of japanese characters in English. Help can be enables in the exercise settings.',
+    //   imgUrl: 'assets/japanese-to-english.jpg',
+    //   data: [],
+    // },
+    // {
+    //   name: 'English to Japanese',
+    //   id: '1',
+    //   comment: 'Try to guess signification of english characters in Japanese. Help can be enables in the exercise settings.',
+    //   imgUrl: 'assets/classroom.jpg',
+    //   data: [],
+    // }
+  ];
   }
 
   getExercises = function() {
