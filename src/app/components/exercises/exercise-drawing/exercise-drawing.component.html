@@ -1,18 +1,23 @@
+<div class="main-container">
 <div class="instructions-container" *ngIf="!exerciseStarted">
-    <div class="top-component">
-      <p class="title">This is the drawing exercise.</p>
-      <p class="istructions">This exercise is a series of English words. For each element of this list, you will have to draw on the screen the matching Japanese character.</p>
+  <div class="top-component">
+    <img class="exercise-img" src="assets/cali.jpg">
+    <div class="exercise-title">
+      <p class="title">Drawing exercise</p>
+      <button class="bx--btn bx--btn--tertiary" (click)="onStartExercise()" type="button">Start <i class="fa fa-play-circle"></i></button>
     </div>
-    <div class="setting-form">
-      <p class="subtitle">Settings</p>
-      <form>
-        This is the form.
-      </form>
-      <button class="start-button" (click)="onStartExercise()">Start</button>
-    </div>
+  </div>
+  <div class="setting-menu">
+    <ul>
+      <li class="active" (click)="summaryClicked($event)">Summary</li>
+      <li (click)="exerciseSettingsClicked($event)">Exercise settings</li>
+      <li (click)="languageSettingsClicked($event)">Language settings</li>
+    </ul>
+  </div>
 </div>
-
-<div class="exercise-container" *ngIf="exerciseStarted">
-  <p class="title">Draw the character た</p>
-  <app-drawing-canvas></app-drawing-canvas>
+  <div class="setting-content">
+    <app-exercise-summary *ngIf="activeSetting === 'summary'" [exercise]="exercise" ></app-exercise-summary>
+    <div *ngIf="activeSetting === 'exercise-settings'">Exercise settings</div>
+    <div *ngIf="activeSetting === 'language-settings'">Language settings</div>
+  </div>
 </div>

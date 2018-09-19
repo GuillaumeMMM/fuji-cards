@@ -1,0 +1,8 @@
+<div class="collection">
+  <div class="title">Summary</div>
+  <div class="elements">
+    <div class="collection-element" *ngFor="let exerciseElement of exercise.data" (mouseover)="mouseOverSummaryCard($event)" (mouseout)="mouseOutSummaryCard($event)">
+      {{exerciseElement.character}}
+    </div>
+  </div>
+</div>

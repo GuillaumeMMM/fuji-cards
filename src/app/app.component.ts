@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   routesNames = [
     {path: 'home', name: 'Home'},
     {path: 'exercises', name: 'Exercises'},
-    {path: 'exercises-drawing', name: 'Drawing Exercise'},
+    {path: 'exercise-drawing', name: 'Drawing Exercise'},
     {path: '', name: 'Home'},
   ];
 

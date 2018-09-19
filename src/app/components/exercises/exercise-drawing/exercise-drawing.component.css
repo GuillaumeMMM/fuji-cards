@@ -1,14 +1,75 @@
 .instructions-container{
-    width: 90%;
+    width: 100%;
     margin: auto;
+    border-bottom: 1px solid #cdd1d4;
+    padding: 20px 20px 0 20px;
+}
+
+.exercise-img{
+    border-radius: 100%;
+    width: 20%;
+    border: 3px #5a6872 solid;
+}
+
+.exercise-img:hover{
+    -webkit-box-shadow: 0px 3px 22px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 22px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 22px -4px rgba(0,0,0,0.75);
+}
+
+.exercise-title{
+    padding-left: 30px;
 }
 
 .title{
-    font-size: 3em;
-    padding: 10px 20px;
+    font-size: 1.5em;
+    padding: 10px 0;
 }
 
-.subtitle{
-    font-size: 1.5em;
-    padding: 10px 20px;
+.top-component{
+    display: flex; 
+    align-items: center;
+    margin-left: 10%;
+}
+
+.bx--btn:hover{
+    -webkit-box-shadow: 0px 3px 22px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 22px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 22px -4px rgba(0,0,0,0.75);
+}
+
+/* Menu */
+.setting-menu{
+    margin-top: 30px;
+}
+
+.setting-menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.setting-menu li{
+    display: inline-flex;
+    padding: 10px 10px;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+    color: #8897a2;
+}
+
+.setting-menu .active{
+    color: #272d33;
+    border-bottom: 1px #5a6872 solid;
+}
+
+.setting-content{
+    padding: 20px;
+    background-color: white;
+    flex: 1;
+}
+
+.main-container{
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
 }

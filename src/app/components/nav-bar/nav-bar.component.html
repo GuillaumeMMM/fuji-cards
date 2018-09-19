@@ -4,7 +4,12 @@
         <div class="nav-container">
             <a class="header-link">
                 <div class="current-container">
-                    <a (click)="displayMenu()"><i class="fa fa-3x fa-bars" title="bars"></i></a>
+                    <!-- <a (click)="displayMenu()"><i class="fa fa-3x fa-bars" title="bars"></i></a> -->
+                    <div class="hamburger" id="hamburger-2" (click)="displayMenu()">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
                     <a [href]="activeRoute.route" class='current-link' (mouseout)="mouseOutAtive()" (mouseover)="mouseOverAtive()"><li class="current"><span class="current-text">{{activeRoute.name}}</span></li></a>
                 </div>
             </a>

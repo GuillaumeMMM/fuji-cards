@@ -1,17 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 html{
     height: 100%;
-    background-color: #f4f4f4;
+    background-color: #f4f7fb;
     font-weight: 200;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: black !important;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
+    background-color: #f4f7fb !important;
 }

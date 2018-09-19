@@ -24,6 +24,8 @@ export class NavBarComponent implements OnInit {
     const menuElements = document.getElementsByClassName('nav-item');
     const burger = document.getElementsByClassName('fa-bars');
 
+    document.getElementsByClassName('hamburger')[0].classList.toggle('is-active');
+
     if (!this.menuDisplayed) {
       this.menuDisplayed = true;
 
@@ -44,6 +46,7 @@ export class NavBarComponent implements OnInit {
       }
     } else {
 
+      anime.remove(burger);
       const burgerRotation = anime({
         targets: burger,
         rotate: {value: '0turn', duration: 1000},
@@ -62,6 +65,7 @@ export class NavBarComponent implements OnInit {
 
   mouseOverAtive() {
     const active = document.getElementsByClassName('current-text');
+    anime.remove(active);
     const currentLinkTranslation = anime({
       targets: active,
       translateX: -20
@@ -70,6 +74,7 @@ export class NavBarComponent implements OnInit {
 
   mouseOutAtive() {
     const active = document.getElementsByClassName('current-text');
+    anime.remove(active);
     const currentLinkTranslation = anime({
       targets: active,
       translateX: 0

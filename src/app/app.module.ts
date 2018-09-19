@@ -12,6 +12,7 @@ import { ExerciseComponent } from './components/exercises/exercise/exercise.comp
 import { DataService } from './services/data.service';
 import { ExerciseDrawingComponent } from './components/exercises/exercise-drawing/exercise-drawing.component';
 import { DrawingCanvasComponent } from './components/exercises/exercise-drawing/drawing-canvas/drawing-canvas.component';
+import { ExerciseSummaryComponent } from './components/exercises/exercise-drawing/exercise-summary/exercise-summary.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     ExerciseComponent,
     ExerciseDrawingComponent,
-    DrawingCanvasComponent
+    DrawingCanvasComponent,
+    ExerciseSummaryComponent
   ],
   imports: [
     BrowserModule,
